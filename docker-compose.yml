@@ -1,0 +1,10 @@
+version: '2'
+services:
+  owncloud:
+    images: owncloud:latest
+    ports:
+-	'8080:80'
+    volumes:
+-	owncloud_persistent_db:/var/www/html/data
+volumes:
+  owncloud_persistent_db:
